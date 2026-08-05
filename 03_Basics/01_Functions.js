@@ -25,11 +25,43 @@ const result = addTwoNumbers(35, 10)
 
 function loginUserMessage(username = "Ro"){
     if(!username){
-        console.log("Please enter a username");
+        // console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
 }
 
 // console.log(loginUserMessage("Rohit"));
-console.log(loginUserMessage());
+// console.log(loginUserMessage());
+
+// Functions with objects and arrays
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200,55,455,145));
+
+const user={
+    username : "Rohit",
+    price : 455
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+
+// handleObject(user)
+handleObject({
+    username : "Virat",
+    price : 188
+})
+
+const myNewArray = [18, 45, 93, 99]
+
+function returnSecondValue(getArr){
+    return getArr
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([18, 45, 93, 99]));
